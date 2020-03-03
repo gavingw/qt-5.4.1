@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_managetools</class>
+ <widget class="QWidget" name="frm_managetools">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>管理工具</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;WenQuanYi Zen Hei&quot;;
+background-color: rgb(112, 200, 11);</string>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>651</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="tbtn_Close">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>270</y>
+     <width>611</width>
+     <height>159</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QToolButton" name="tbtn_restore">
+      <property name="font">
+       <font>
+        <family>WenQuanYi Zen Hei</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>恢复设置</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../src/btnImage.qrc">
+        <normaloff>:/images/image/home.png</normaloff>:/images/image/home.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>128</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="tbtn_systime">
+      <property name="font">
+       <font>
+        <family>WenQuanYi Zen Hei</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>系统时间</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../src/btnImage.qrc">
+        <normaloff>:/manangertools/image/navigationmap.png</normaloff>:/manangertools/image/navigationmap.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>128</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="tbtn_Update">
+      <property name="font">
+       <font>
+        <family>WenQuanYi Zen Hei</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>软件升级</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../src/btnImage.qrc">
+        <normaloff>:/manangertools/image/tooldownboard.png</normaloff>:/manangertools/image/tooldownboard.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>128</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>611</width>
+     <height>159</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QToolButton" name="tbtn_sysparm">
+      <property name="font">
+       <font>
+        <family>WenQuanYi Zen Hei</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>系统参数</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../src/btnImage.qrc">
+        <normaloff>:/manangertools/image/dashcode.png</normaloff>:/manangertools/image/dashcode.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>128</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="tbtn_hardmanage">
+      <property name="font">
+       <font>
+        <family>WenQuanYi Zen Hei</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>硬盘管理</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../src/btnImage.qrc">
+        <normaloff>:/manangertools/image/installdrive.png</normaloff>:/manangertools/image/installdrive.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>128</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="tbtn_sysinfo">
+      <property name="font">
+       <font>
+        <family>WenQuanYi Zen Hei</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>系统信息</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../src/btnImage.qrc">
+        <normaloff>:/manangertools/image/alternote.png</normaloff>:/manangertools/image/alternote.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>128</width>
+        <height>128</height>
+       </size>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../src/btnImage.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>tbtn_Close</sender>
+   <signal>clicked()</signal>
+   <receiver>frm_managetools</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

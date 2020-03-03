@@ -1,0 +1,14 @@
+prefix=/home/skyliqf/workhome/lichee_A40i/buildroot/dl/qt-everywhere-opensource-src-5.4.1/Qt-5.4.1
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Svg
+Description: Qt Svg module
+Version: 5.4.1
+Libs: -L${libdir} -lQt5Svg 
+Libs.private: -L/buildroot/external-packages/gpu/mali400/fbdev/fbdev_arm-linux-gnueabi_armv7_dma-buf/lib -L/home/skyliqf/workhome/lichee_A40i/buildroot/dl/qt-everywhere-opensource-src-5.4.1/Qt-5.4.1/lib -lQt5Widgets -lQt5Gui -lQt5Core -lpthread -lGLESv2  
+Cflags: -I${includedir}/QtSvg -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+

@@ -1,0 +1,7 @@
+xplayerdemo
+set url: /mnt/UDISK/a.mp4
+set url: /H264_artifacts_motion.h264
+set url: /mnt/UDISK/rearVideo/15-19700101_002432_rear.mp4
+show media info
+play
+pause

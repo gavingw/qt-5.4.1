@@ -1,0 +1,8 @@
+typedef enum _char_enc
+{
+    ENCODE_ISO_8859_1 = 0,
+	ENCODE_USC_2 = 1,
+	ENCODE_UTF_16_BE = 2,
+    ENCODE_UTF_8 = 3,
+    ENCODE_DEFAULT = ENCODE_UTF_8,
+}char_enc;

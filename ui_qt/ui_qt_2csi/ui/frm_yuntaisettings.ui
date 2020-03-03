@@ -1,0 +1,458 @@
+<ui version="4.0" >
+ <class>frm_yuntaisettings</class>
+ <widget class="QWidget" name="frm_yuntaisettings" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>630</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>云台设置</string>
+  </property>
+  <property name="styleSheet" >
+   <string notr="true" >font: 12pt "WenQuanYi Zen Hei";
+background-color: rgb(112, 200, 11);</string>
+  </property>
+  <widget class="QSpinBox" name="spinBox_3" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>270</y>
+     <width>171</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="suffix" >
+    <string/>
+   </property>
+   <property name="prefix" >
+    <string>通道</string>
+   </property>
+   <property name="minimum" >
+    <number>1</number>
+   </property>
+   <property name="maximum" >
+    <number>16</number>
+   </property>
+   <property name="value" >
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>330</x>
+     <y>270</y>
+     <width>100</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>复制</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox" >
+   <property name="geometry" >
+    <rect>
+     <x>210</x>
+     <y>400</y>
+     <width>189</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="standardButtons" >
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>551</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>71</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>复制到</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>171</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="suffix" >
+    <string/>
+   </property>
+   <property name="prefix" >
+    <string>通道</string>
+   </property>
+   <property name="minimum" >
+    <number>1</number>
+   </property>
+   <property name="maximum" >
+    <number>16</number>
+   </property>
+   <property name="value" >
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>76</y>
+     <width>161</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <item>
+    <property name="text" >
+     <string>2400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>4800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>9600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>19200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>38400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>76800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>153600</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_8" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>221</y>
+     <width>105</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>解码器地址</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>123</y>
+     <width>105</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>停止位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>74</y>
+     <width>105</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>速率</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>172</y>
+     <width>105</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>流控</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_8" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>173</y>
+     <width>161</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <item>
+    <property name="text" >
+     <string>无</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_16" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>84</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>选择通道</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_4" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>126</y>
+     <width>161</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="suffix" >
+    <string>位</string>
+   </property>
+   <property name="prefix" >
+    <string/>
+   </property>
+   <property name="minimum" >
+    <number>1</number>
+   </property>
+   <property name="maximum" >
+    <number>8</number>
+   </property>
+   <property name="singleStep" >
+    <number>1</number>
+   </property>
+   <property name="value" >
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_5" >
+   <property name="geometry" >
+    <rect>
+     <x>430</x>
+     <y>79</y>
+     <width>169</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="suffix" >
+    <string>位</string>
+   </property>
+   <property name="prefix" >
+    <string/>
+   </property>
+   <property name="minimum" >
+    <number>1</number>
+   </property>
+   <property name="maximum" >
+    <number>8</number>
+   </property>
+   <property name="singleStep" >
+    <number>1</number>
+   </property>
+   <property name="value" >
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10" >
+   <property name="geometry" >
+    <rect>
+     <x>340</x>
+     <y>79</y>
+     <width>84</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>数据位</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_9" >
+   <property name="geometry" >
+    <rect>
+     <x>430</x>
+     <y>124</y>
+     <width>169</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <item>
+    <property name="text" >
+     <string>无校验</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>奇校验</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>偶校验</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_12" >
+   <property name="geometry" >
+    <rect>
+     <x>340</x>
+     <y>126</y>
+     <width>84</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>校验</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13" >
+   <property name="geometry" >
+    <rect>
+     <x>340</x>
+     <y>173</y>
+     <width>84</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>协议类型</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_10" >
+   <property name="geometry" >
+    <rect>
+     <x>430</x>
+     <y>172</y>
+     <width>169</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text" >
+     <string>pelco-d</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>223</y>
+     <width>161</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2" >
+   <property name="geometry" >
+    <rect>
+     <x>200</x>
+     <y>330</y>
+     <width>169</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>设定预置点</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3" >
+   <property name="geometry" >
+    <rect>
+     <x>380</x>
+     <y>330</y>
+     <width>169</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>设定轨迹</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>设定巡航路径号</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>551</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

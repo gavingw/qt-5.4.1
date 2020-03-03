@@ -1,0 +1,15 @@
+prefix=/home/skyliqf/workhome/lichee_A40i/buildroot/dl/qt-everywhere-opensource-src-5.4.1/Qt-5.4.1
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config evdev tslib linuxfb accessibility egl eglfs opengl opengles2 shared qpa reduce_exports clock-gettime clock-monotonic posix_fallocate mremap getaddrinfo ipv6ifname getifaddrs inotify eventfd png freetype harfbuzz zlib dbus rpath alsa concurrent audio-backend release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.4.1
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -lm -ldl -lrt  
+Cflags: -I${includedir}/QtCore -I${includedir}
+

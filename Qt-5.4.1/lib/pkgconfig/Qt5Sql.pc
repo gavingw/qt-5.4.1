@@ -1,0 +1,14 @@
+prefix=/home/skyliqf/workhome/lichee_A40i/buildroot/dl/qt-everywhere-opensource-src-5.4.1/Qt-5.4.1
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Sql
+Description: Qt Sql module
+Version: 5.4.1
+Libs: -L${libdir} -lQt5Sql 
+Libs.private: -L/home/skyliqf/workhome/lichee_A40i/buildroot/dl/qt-everywhere-opensource-src-5.4.1/Qt-5.4.1/lib -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtSql -I${includedir}
+Requires: Qt5Core
+

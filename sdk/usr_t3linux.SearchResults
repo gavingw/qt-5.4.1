@@ -1,0 +1,7 @@
+---- mediaInfo Matches (9 in 0 files) ----
+Demorawdata.c (w:\t3linux\pub\buildroot\target\user_rootfs_misc\coder_demov1.2\rawdatademo):    CdxMediaInfoT mediaInfo;
+Demorawdata.c (w:\t3linux\pub\buildroot\target\user_rootfs_misc\coder_demov1.2\rawdatademo):    memset(&Decoder->mediaInfo, 0, sizeof(CdxMediaInfoT));
+Demorawdata.c (w:\t3linux\pub\buildroot\target\user_rootfs_misc\coder_demov1.2\rawdatademo):    logv(" before CdxParserGetMediaInfo() ");
+Demorawdata.c (w:\t3linux\pub\buildroot\target\user_rootfs_misc\coder_demov1.2\rawdatademo):    nRet = CdxParserGetMediaInfo(Decoder->parser, &Decoder->mediaInfo);
+Demorawdata.c (w:\t3linux\pub\buildroot\target\user_rootfs_misc\coder_demov1.2\rawdatademo):    program = &(Decoder->mediaInfo.program[Decoder->mediaInfo.programIndex]);
+---- eCodecFormat Matches (0 in 0 files) ----

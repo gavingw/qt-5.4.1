@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_Update</class>
+ <widget class="QWidget" name="frm_Update">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统升级</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;WenQuanYi Zen Hei&quot;;
+background-color: rgb(112, 200, 11);</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>92</y>
+     <width>140</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>升级方式</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>163</y>
+     <width>191</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>30</number>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Normal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>154</y>
+     <width>140</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>升级文件路径</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>140</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>升级类型</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>40</y>
+     <width>190</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>所有</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>应用</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>内核</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>100</y>
+     <width>190</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>U盘</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SD卡1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SD卡2</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>240</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
