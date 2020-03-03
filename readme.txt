@@ -7,6 +7,3 @@ make clean
 
 即可生成DvrUI应用
 
-由于A40i系统已经安装qt5.4.1库，将DvrUI push的根目录下即可运行
-
-adb push DvrUI /
